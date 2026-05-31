@@ -1,0 +1,59 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.run.xml
+*.nav
+*.snm
+*.tdo
+*.vrb
+*.bbl
+*.blg
+_minted-*
+paper/build/
+build/
+paper/main.pdf
+
+# Python artifacts
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-wheel-metadata/
+*.egg-info/
+dist/
+
+# Test and tooling caches
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db

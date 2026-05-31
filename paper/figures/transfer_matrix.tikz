@@ -1,0 +1,39 @@
+\begin{tikzpicture}[scale=1.2]
+    % Title
+    \node[above] at (4,5) {\textbf{Transfer Matrix Construction (1D)}};
+    
+    % Layer 0
+    \draw[thick] (0,0) -- (8,0);
+    \node[below] at (4,0) {Layer 0};
+    
+    % Layer 1
+    \draw[thick] (0,1) -- (8,1);
+    \node[below] at (4,1) {Layer 1};
+    
+    % Transfer matrix
+    \draw[->,>=stealth,blue,thick] (4,0.5) -- (4,1.5);
+    \node[right] at (4.3,1) {$T_i$};
+    
+    % Matrix block
+    \draw[fill=blue!10] (5.5,1.2) rectangle (6.5,2.2);
+    \node[center] at (6,1.7) {$8\times8$};
+    
+    % State vector
+    \draw[->,>=stealth,red,thick] (7.5,0.5) -- (8.5,0.5);
+    \node[above] at (8.7,0.5) {$|\psi_i\rangle$};
+    
+    % Labels
+    \node[left] at (0.5,0.5) {Flux configuration};
+    \node[left] at (0.5,1.5) {Flux configuration};
+    
+    % Gauss law indicator
+    \draw[green!50!black, thick] (1,2) -- (1.5,2) -- (1.5,2.5) -- (2,2);
+    \node[above] at (1.5,2.75) {Gauss law};
+    
+    % Gauss law holds
+    \node[green!50!black] at (3,2.35) {$\checkmark$};
+    
+    % Defect phase
+    \draw[orange, thick] (6,2) arc (0:360:0.2);
+    \node[orange, above] at (6.2,2.1) {$e^{i\theta}$};
+\end{tikzpicture}

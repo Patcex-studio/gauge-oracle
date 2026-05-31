@@ -1,0 +1,33 @@
+\begin{tikzpicture}[scale=1.5]
+    % Draw the 1D chain
+    \foreach \i in {0,1,2,3,4} {
+        \draw[thick] (\i,0) -- (\i,1);
+        \draw[thick] (\i+0.5,0) -- (\i+0.5,1);
+        \draw[thick] (\i+1,0) -- (\i+1,1);
+    }
+    
+    % Vertices (qubits)
+    \foreach \i in {0,1,2,3,4} {
+        \draw[fill=black] (\i+0.5,0.1) circle (0.05);
+        \node[below] at (\i+0.5,-0.1) {$v_\i$};
+    }
+    
+    % Edges with flux labels
+    \foreach \i in {0,1,2,3} {
+        \draw[->,blue] (\i+0.5,0.2) -- (\i+0.5,0.8);
+        \node[right, blue] at (\i+0.5,0.5) {$f_{e_\i}$};
+    }
+    
+    % Gauss law constraints at vertices
+    \node[above left, \scriptsize] at (0.5,1.1) {$\prod f = 1$};
+    
+    % Defects (T gates)
+    \draw[red, thick, dashed] (1.5,0.3) circle (0.3);
+    \node[red, above] at (1.5,0.8) {$\tau=1$};
+    
+    \draw[red, thick, dashed] (3.5,0.3) circle (0.3);
+    \node[red, above] at (3.5,0.8) {$\tau=1$};
+    
+    % Legend
+    \node[below left] at (0,-0.3) {Vertices = qubits, Red circles = T-defects};
+\end{tikzpicture}

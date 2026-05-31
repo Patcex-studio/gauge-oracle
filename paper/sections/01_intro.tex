@@ -1,0 +1,52 @@
+\section{Introduction}
+
+\subsection{The Exponential Wall}
+
+A fundamental challenge in quantum computing is the exponential scaling of quantum state representations. An $n$-qubit state requires $2^n$ complex amplitudes, making classical simulation intractable for large systems. This exponential wall is not a fundamental law of nature but rather an artifact of our representation. Recent advances suggest alternative geometric frameworks that may circumvent this barrier.
+
+\subsection{Three Glimpses of a New Space}
+
+Three distinct approaches have emerged that replace the exponential list of amplitudes with a geometric object of polynomial parameters:
+
+\subsubsection{Amplituhedron and Positive Grassmannian}
+
+For planar $\mathcal{N}=4$ supersymmetric Yang-Mills theory, scattering amplitudes are given by the volume of the amplituhedron, a geometric object living in a space of dimension $O(N^2)$ for $N$ particles. This volume replaces the exponential sum over Feynman diagrams, with interference encoded in the geometry itself rather than explicit phase summation.
+
+\subsubsection{Tensor Networks as Discretised Bulk Geometry}
+
+Matrix product states (MPS) and multi-scale entanglement renormalization (MERA) represent quantum states as graphs. For area-law entangled states, the bond dimension remains polynomial, and the continuous limit yields emergent bulk geometry as seen in AdS/CFT correspondence. However, volume-law entangled states require exponential bond dimension.
+
+\subsubsection{Quantum Shadows and Oracle Representations}
+
+Classical shadow techniques use a polynomial number of measurement settings to reconstruct quantum states. The state is represented as a probability distribution over a compact manifold (e.g., the Bloch sphere), with expectation values obtained by integrating against a kernel. This oracle approach treats the state as a query interface rather than explicit amplitude storage.
+
+\begin{table}[h]
+\centering
+\caption{Geometric Ingredients for Quantum State Representation}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Idea} & \textbf{Geometric Ingredient} & \textbf{What It Gives} \\
+\hline
+Amplituhedron & Convex geometry in Grassmannian & Polynomial volume replaces exponential diagram sum \\
+\hline
+Tensor Networks & Graph/spin network on surface & Polynomial bond dimension for area-law states \\
+\hline
+Quantum Shadows & Probability density on manifold & Oracle access to expectation values \\
+\hline
+\end{tabular}
+\end{table}
+
+All three approaches share a common thread: they replace the exponential amplitude list with a geometric object having polynomial parameters. However, none provides a unified language that simultaneously encodes interference (phases), entanglement (topology), and measurement (observables). We propose that gauge theory provides this unifying framework.
+
+\subsection{This Work}
+
+We construct a representation using $\mathbb{Z}_8$ gauge theory with topological defects. Our main results are:
+
+\begin{enumerate}
+    \item In one dimension, expectation values of local observables are computable in polynomial time (Theorem~\ref{thm:1d-polynomial}).
+    \item In two dimensions, the evaluation problem becomes \#P-complete.
+    \item We formulate the Defect-Complexity Conjecture: abelian gauge theories require an exponential number of defects for generic states.
+    \item We discuss extensions to non-abelian theories and continuous connections.
+\end{enumerate}
+
+This work reveals a dimensional threshold for classical simulatability, with profound implications for quantum advantage.

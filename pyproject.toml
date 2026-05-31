@@ -1,0 +1,18 @@
+[project]
+name = "gauge-oracle"
+version = "0.1.0"
+description = "A one-dimensional Z8 gauge-theory oracle for Clifford+T circuit simulation."
+requires-python = ">=3.10"
+authors = [
+  { name = "Gauge Oracle" }
+]
+license = { text = "BSD-3-Clause" }
+keywords = ["quantum", "gauge theory", "Clifford+T", "transfer matrix"]
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "pytest>=8.0"
+]
+
+[tool.pytest]
+testpaths = ["tests"]

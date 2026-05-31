@@ -1,0 +1,36 @@
+\section{Extensions and Alternatives}
+
+\subsection{Non-Abelian Gauge Theories}
+
+Replacing $\mathbb{Z}_8$ with a non-abelian group (e.g., SU(2)$_k$, D$_8$) introduces non-abelian anyons. A single non-abelian defect can encode a superposition of multiple abelian charges.
+
+\begin{itemize}
+    \item \textbf{Fibonacci anyons} (SU(2)$_3$): One anyon can replace an entire cluster of $\mathbb{Z}_8$ defects.
+    \item \textbf{Ising anyons} (Z$_2$ gauge theory with fermions): Can encode T gates more efficiently.
+\end{itemize}
+
+\textit{Hypothesis:} In non-abelian theories, defect complexity may be polynomial for BQP states.
+
+\subsection{Continuous Connections on Spin-Foams}
+
+Instead of discrete fluxes, we can use a continuous connection $A_\mu(x)$ on a 4D spin-foam. The state is specified by holonomies along a finite set of curves.
+
+For integrable models (Ashtekar-Lewandowski), holonomies completely determine the wavefunction. Expectation values become path integrals that may be polynomial if the number of holonomy variables is bounded.
+
+\subsection{Hybrid Constructions}
+
+We can combine abelian and non-abelian elements:
+\begin{itemize}
+    \item Use $\mathbb{Z}_8$ defects for Clifford parts of circuits.
+    \item Use non-abelian defects for T gates and magic states.
+\end{itemize}
+
+This may yield polynomial description and evaluation for a broader class of states.
+
+\subsection{Open Questions}
+
+\begin{enumerate}
+    \item Does there exist a non-abelian gauge theory with polynomial defect complexity for all BQP states?
+    \item Can continuous connections be discretized with polynomial error?
+    \item What is the precise relationship between defect complexity and measures of magic (stabilizer rank, mana, robustness)?
+\end{enumerate}

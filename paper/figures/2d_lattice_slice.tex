@@ -1,0 +1,38 @@
+\begin{tikzpicture}[scale=1.5]
+    % Title
+    \node[above] at (4,4.5) {\textbf{2D Lattice Slice}};
+    
+    % 2D lattice (3x3)
+    \draw[thick] (0,0) grid (3,3);
+    
+    % Label vertices
+    \foreach \i in {0,1,2,3} {
+        \foreach \j in {0,1,2,3} {
+            \draw[fill=black] (\i-0.05,\j-0.05) circle (0.03);
+        }
+    }
+    
+    % Cutting plane
+    \draw[red, thick, dashed] (-0.5,1.5) -- (4.5,1.5);
+    \node[red, above] at (3,1.7) {Slice};
+    
+    % Edges intersected
+    \draw[blue, thick] (0.5,1.5) -- (1.5,1.5);
+    \draw[blue, thick] (1.5,1.5) -- (2.5,1.5);
+    \draw[blue, thick] (2.5,1.5) -- (3.5,1.5);
+    
+    % Flux labels on intersected edges
+    \node[blue, above] at (1,1.5) {$f_1$};
+    \node[blue, above] at (2,1.5) {$f_2$};
+    \node[blue, above] at (3,1.5) {$f_3$};
+    
+    % Dimension annotation
+    \draw[<->,blue] (3.8,1.2) -- (3.8,1.8);
+    \node[blue, right, \scriptsize] at (4,1.5) {$k = O(n)$ edges};
+    
+    % Hilbert space dimension
+    \node[below] at (4.5,0.5) {$\dim = 8^k = 8^{O(n)}$};
+    
+    % Legend
+    \node[below left] at (0,-0.3) {Blue lines: edges intersected by slice};
+\end{tikzpicture}

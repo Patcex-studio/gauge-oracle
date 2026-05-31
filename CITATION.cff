@@ -1,0 +1,19 @@
+cff: "1.2"
+message: "Citation file for Gauge-Theoretic Defect Representation of Quantum States"
+title: "Gauge-Theoretic Defect Representation of Quantum States: A Dimensional Threshold for Classical Simulatability"
+authors:
+  - name: "Jocer Speis"
+    corresponding: false
+date: "2026-05-31"
+license: CC-BY-4.0
+license-url: https://creativecommons.org/licenses/by/4.0/
+version: "v1.0"
+doi: "TODO"
+repository: "https://github.com/Parcex-studio/gauge-oracle"
+keywords:
+  - quantum computing
+  - gauge theory
+  - classical simulation
+  - defect representation
+  - Z8
+url: https://github.com/Parcex-studio/gauge-oracle
