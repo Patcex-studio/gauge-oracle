@@ -4,7 +4,7 @@
 [![Test status](https://img.shields.io/github/actions/workflow/status/Patcex-studio/gauge-oracle/test.yml?branch=main&label=tests)](https://github.com/Patcex-studio/gauge-oracle/actions/workflows/test.yml)
 [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20475388.svg)](https://doi.org/10.5281/zenodo.20475388)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20475388.svg)](https://doi.org/10.5281/zenodo.20475925)
 
 ---
 
