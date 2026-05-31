@@ -8,7 +8,7 @@ date: "2026-05-31"
 license: CC-BY-4.0
 license-url: https://creativecommons.org/licenses/by/4.0/
 version: "v1.0"
-doi: "TODO"
+doi: "10.5281/zenodo.20475388"
 repository: "https://github.com/Parcex-studio/gauge-oracle"
 keywords:
   - quantum computing
