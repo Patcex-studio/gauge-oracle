@@ -108,7 +108,6 @@ def test_build_transfer_matrix_full_and_expectation_with_clifford():
     defects = {0: 1, 1: 2}
     full = build_transfer_matrix_full(n, defects)
     assert full.shape == (64, 64)
-    base = expectation_with_transfer_matrix(n, defects, "ZI")
     transformed = PauliString("ZI").conjugate_by("H", (0,))
     actual = expectation_with_transfer_matrix(n, defects, "ZI", clifford_circuit=[("H", 0, None)])
     assert actual == pytest.approx(expectation_with_transfer_matrix(n, defects, transformed.string))
